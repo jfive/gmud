@@ -6,7 +6,7 @@
     </list>
     <ignored path="gmud-web.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373219547557" ignored="false" />
+    <file path="/Dummy.txt" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373219673575" ignored="false" />
     <file path="/hibernate.properties" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373215919931" ignored="false" />
     <file path="/persistence.xml" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373217700103" ignored="false" />
     <file path="/jboss-web.xml" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373217516267" ignored="false" />
@@ -627,7 +627,11 @@
       <created>1373219549924</created>
       <updated>1373219549924</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="arquivos que devem ser ignorados">
+      <created>1373219677264</created>
+      <updated>1373219677264</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
