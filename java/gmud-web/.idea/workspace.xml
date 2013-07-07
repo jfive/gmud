@@ -6,7 +6,7 @@
     </list>
     <ignored path="gmud-web.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373218955224" ignored="false" />
+    <file path="/Dummy.txt" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373219547557" ignored="false" />
     <file path="/hibernate.properties" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373215919931" ignored="false" />
     <file path="/persistence.xml" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373217700103" ignored="false" />
     <file path="/jboss-web.xml" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373217516267" ignored="false" />
@@ -74,28 +74,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LoginController.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="LoginController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/br/com/jfive/gmud/controllers/login/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="43" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
+            <state line="25" column="43" selection-start="459" selection-end="459" vertical-scroll-proportion="0.5518395">
               <folding />
             </state>
           </provider>
@@ -641,7 +623,11 @@
       <created>1373218960509</created>
       <updated>1373218960509</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="arquivos que devem ser ignorados">
+      <created>1373219549924</created>
+      <updated>1373219549924</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -720,7 +706,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Acerto de espacos" />
+    <option name="LAST_COMMIT_MESSAGE" value="arquivos que devem ser ignorados" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -736,6 +722,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="projeto criado e adicionado template com exemplos" />
     <MESSAGE value="Acerto de espacos" />
+    <MESSAGE value="arquivos que devem ser ignorados" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -844,9 +831,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/br/com/jfive/gmud/controllers/login/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="43" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
+        <state line="9" column="52" selection-start="585" selection-end="585" vertical-scroll-proportion="0.23076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -858,16 +852,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/br/com/jfive/gmud/controllers/login/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
+        <state line="25" column="43" selection-start="459" selection-end="459" vertical-scroll-proportion="0.5518395">
           <folding />
         </state>
       </provider>
