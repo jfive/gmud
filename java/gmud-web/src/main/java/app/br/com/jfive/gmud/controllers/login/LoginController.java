@@ -16,7 +16,6 @@ public class LoginController {
     }
 
 
-
     @Path("/login")
     @Get
     public void login() {
