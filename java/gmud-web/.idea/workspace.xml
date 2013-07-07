@@ -2,11 +2,80 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ce47908-8e20-4fe6-9423-72651ef25b4f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/gmud_web_war.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/gmud_web_war_exploded.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__br_com_caelum_iogi_0_9_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__br_com_caelum_vraptor_3_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_2_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_r07.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javassist_javassist_3_6_0_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_0_0_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jcommon_1_0_15.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jfreechart_1_0_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_scannotation_scannotation_1_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_vidageek_mirror_1_5_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__opensymphony_sitemesh_2_4_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_6_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_all_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_generator_1_3_RC2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_integration_1_3_RC2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3_RC2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_1_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_c3p0_4_0_1_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_0_1_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_0_1_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_4_2_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hsqldb_hsqldb_2_2_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_15_0_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_CR2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_1_spec_1_0_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jmock_jmock_2_5_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jmock_jmock_legacy_2_5_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_9_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_3_0_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_asm_3_0_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_3_0_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_3_0_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_3_0_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_3_0_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_3_0_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__qdox_qdox_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="gmud-web.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373219673575" ignored="false" />
+    <file path="/Dummy.txt" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373219692292" ignored="false" />
     <file path="/hibernate.properties" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373215919931" ignored="false" />
     <file path="/persistence.xml" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373217700103" ignored="false" />
     <file path="/jboss-web.xml" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373217516267" ignored="false" />
@@ -14,6 +83,7 @@
     <file path="/fragment.java" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373217257264" ignored="false" />
     <file path="/web.xml" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373217156618" ignored="false" />
     <file path="/index.jsp" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373217806822" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="5ce47908-8e20-4fe6-9423-72651ef25b4f" time="1373219744762" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -631,7 +701,11 @@
       <created>1373219677264</created>
       <updated>1373219677264</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="acerto">
+      <created>1373219694300</created>
+      <updated>1373219694300</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -710,7 +784,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="arquivos que devem ser ignorados" />
+    <option name="LAST_COMMIT_MESSAGE" value="acerto" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -727,6 +801,7 @@
     <MESSAGE value="projeto criado e adicionado template com exemplos" />
     <MESSAGE value="Acerto de espacos" />
     <MESSAGE value="arquivos que devem ser ignorados" />
+    <MESSAGE value="acerto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
