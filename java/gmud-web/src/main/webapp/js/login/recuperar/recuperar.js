@@ -19,7 +19,7 @@ function userController($scope, $window, $http) {
     };
 
     $scope.sendVoltar = function() {
-        window.location.href="/gmud/login";
+        window.location.href="/gmud/";
     }
 
 
