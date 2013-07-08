@@ -39,11 +39,9 @@
                 <h6>Recuperar Senha</h6>
                 <div id="errorMessage"></div>
                 <input class="span12" type="text" name="email" placeholder="E-mail de cadastro" ng-model="usuario.email">
-                <div class="span2">
-                    <div class="content-wrap">
-                        <input class="btn-glow primary login" type="button" value="Enviar Senha Por E-Mail" id="btnSubmit"  ng-click="sendEmail()"/>
-                        <input class="btn-glow primary login" type="button" value="Voltar"  ng-click="sendVoltar()"/>
-                    </div>
+                <div class="row ctrls">
+                    <input class="btn-glow primary login" type="button" value="Enviar Senha Por E-Mail" id="btnSubmit"  ng-click="sendEmail()"/>
+                    <input class="btn-glow" type="button" value="Voltar"  ng-click="sendVoltar()"/>
                 </div>
             </div>
         </div>
