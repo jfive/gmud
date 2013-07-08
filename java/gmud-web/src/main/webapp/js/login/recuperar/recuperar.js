@@ -5,32 +5,51 @@
  * Time: 20:13
  * To change this template use File | Settings | File Templates.
  */
-Backbone.emulateHTTP = true;
-Backbone.emulateJSON = true;
+function userController($scope, $window, $http) {
 
+    $scope.sendEmail = function () {
+
+        var user = angular.toJson({usuario : $scope.usuario});
+        $http.post('/gmud/login/enviaSenha', user).success(function(data){
+            $('#errorMessage').html("");
+            $('#errorMessage').append("<div class='alert alert-success'>" + data.message +"</div>");
+        });
+
+
+    };
+
+    $scope.sendVoltar = function() {
+        $http.redirectTo("/gmud/login/");
+    }
+
+
+}
+ /*
 User = Backbone.Model.extend({
 
     el: $('body'),
 
-    initialize : function(){
-        this.bind('invalid', function( model, error ) {
-            $('#errorMessage').append("<div class='alert alert-error'>"+ error +"</div>")
-            console.error(error);
-            return false;
-        });
+    paramRoot: 'usuario',
 
+    initialize : function(){
+        this.bind("invalid",  function(model, error) {
+            $('#errorMessage').html("");
+            $('#errorMessage').append("<div class='alert alert-error'>"+ error +"</div>");
+        });
     },
+
+    toJSON: function(){
+        return {usuario: _.clone(this.attributes)}
+    },
+
+    dataType: 'jsonp',
 
 
     defaults : {
         email: ""
     },
 
-    urlRoot : "/gmud/login/recuperar",
-
-    url: function() {
-        return this.urlRoot + "/" + this.get('email');
-    },
+    urlRoot : "/gmud/login/enviaSenha",
 
 
     validate : function(attributes) {
@@ -48,31 +67,38 @@ View = Backbone.View.extend({
     el: $('#formRecupera'),
 
     initialize: function(){
-        this.model = new User();
+        this.model = new User;
     },
 
     events: {
-        "click #btnSubmit" : "send"
+        "click #btnSubmit" : "send",
+        "submit" : "send"
     },
 
     send : function(event) {
 
-        event.preventDefault();
-
         var emailTxt = this.$('input[name=email]').val();
         var result = new Message();
 
-        this.model.set({email: emailTxt})
-            .fetch({
+        this.model.set({email: emailTxt},{validate: true});
+
+        if(this.model.isValid()){
+            this.model.save({
                 success: function(result) {
-                    console.log(result.get('message'));
+                    $('#errorMessage').html("");
+                    $('#errorMessage').append("<div class='alert alert-success'>" + result.get('message') +"</div>");
+                },
+                error: function(model, error){
+                    $('#errorMessage').html("");
+                    $('#errorMessage').append("<div class='alert alert-error'>Erro ao recuperar a senha tente novamente mais tarde</div>");
                 }
 
             });
+        }
     }
 
 });
 
-//<div class="alert alert-error">Login ou senha inválidos</div>
-
 var view = new View();
+       */
+

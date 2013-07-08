@@ -1,6 +1,6 @@
-package app.br.com.jfive.gmud.interceptors;
+package br.com.jfive.gmud.interceptors;
 
-import app.br.com.jfive.gmud.annotations.Category;
+import br.com.jfive.gmud.annotations.Category;
 import br.com.caelum.vraptor.InterceptionException;
 import br.com.caelum.vraptor.Intercepts;
 import br.com.caelum.vraptor.core.InterceptorStack;
@@ -11,8 +11,6 @@ import br.com.caelum.vraptor.resource.ResourceMethod;
 import javax.servlet.http.HttpServletRequest;
 
 
-@Intercepts
-@RequestScoped
 public class MenuInterceptor implements Interceptor {
 
     private final HttpServletRequest request;
@@ -28,7 +26,7 @@ public class MenuInterceptor implements Interceptor {
     public void intercept(InterceptorStack stack, ResourceMethod method,
                           Object resourceInstance) throws InterceptionException {
 
-        // Utilizado para setar o menu que o usuário está
+//        Utilizado para setar o menu que o usuário está
         Category category = resourceInstance.getClass().getAnnotation(Category.class);
         if(category != null && category.value() != null){
             this.request.setAttribute("menu", category.value());

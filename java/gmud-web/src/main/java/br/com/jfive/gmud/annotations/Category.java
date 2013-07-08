@@ -1,4 +1,4 @@
-package app.br.com.jfive.gmud.annotations;
+package br.com.jfive.gmud.annotations;
 
 
 import java.lang.annotation.ElementType;

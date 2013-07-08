@@ -1,4 +1,4 @@
-package app.br.com.jfive.gmud.controllers;
+package br.com.jfive.gmud.controllers;
 
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
@@ -28,14 +28,14 @@ public class ClientesController {
 
     public void adiciona(final Cliente cliente){
 
-        validator.checking(new Validations(){{
-            if(that(cliente != null,"cliente","cliente.nulo")){
-                that(cliente.getNome() != null && !cliente.getNome().isEmpty(), "nome","nome.vazio");
-            }
-        }});
-        validator.onErrorUsePageOf(ClientesController.class).form();
-
-        clienteList.add(cliente);
+//        validator.checking(new Validations(){{
+//            if(that(cliente != null,"cliente","cliente.nulo")){
+//                that(cliente.getNome() != null && !cliente.getNome().isEmpty(), "nome","nome.vazio");
+//            }
+//        }});
+//        validator.onErrorUsePageOf(ClientesController.class).form();
+//
+//        clienteList.add(cliente);
         result.forwardTo(ClientesController.class).json();
     }
 

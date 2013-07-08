@@ -1,4 +1,4 @@
-package app.br.com.jfive.gmud.controllers.login;
+package br.com.jfive.gmud.controllers.login;
 
 /**
  * Created with IntelliJ IDEA.

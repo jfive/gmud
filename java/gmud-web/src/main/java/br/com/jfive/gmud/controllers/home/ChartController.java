@@ -1,6 +1,6 @@
-package app.br.com.jfive.gmud.controllers.home;
+package br.com.jfive.gmud.controllers.home;
 
-import app.br.com.jfive.gmud.annotations.Category;
+import br.com.jfive.gmud.annotations.Category;
 import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;

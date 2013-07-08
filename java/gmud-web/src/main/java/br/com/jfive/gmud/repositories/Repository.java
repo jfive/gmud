@@ -1,4 +1,4 @@
-package app.br.com.jfive.gmud.repositories;
+package br.com.jfive.gmud.repositories;
 
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;

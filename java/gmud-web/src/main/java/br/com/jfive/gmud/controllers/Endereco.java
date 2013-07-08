@@ -1,4 +1,4 @@
-package app.br.com.jfive.gmud.controllers;
+package br.com.jfive.gmud.controllers;
 
 /**
  * Created with IntelliJ IDEA.

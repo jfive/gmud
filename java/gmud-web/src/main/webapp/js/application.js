@@ -1,11 +1,3 @@
-// Model default para trabalhar com mensagem do tipo String
-Message = Backbone.Model.extend({
-
-    defaults: {
-        message: ''
-    }
-
-});
 
 
 $(function(){
