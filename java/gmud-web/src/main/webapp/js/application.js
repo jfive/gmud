@@ -1,3 +1,13 @@
+// Model default para trabalhar com mensagem do tipo String
+Message = Backbone.Model.extend({
+
+    defaults: {
+        message: ''
+    }
+
+});
+
+
 $(function(){
 
     var menu = $(menuActive);
@@ -10,3 +20,4 @@ $(function(){
     menu.addClass("active");
 
 })
+

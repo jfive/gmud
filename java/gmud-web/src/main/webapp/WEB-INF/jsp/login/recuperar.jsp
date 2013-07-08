@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html class="login-bg">
 <head>
-	<title>Detail Admin - Sign in</title>
+    <title>Detail Admin - Sign in</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- bootstrap -->
     <link href="<c:url value='/css/bootstrap/bootstrap.css'/>" rel="stylesheet">
@@ -25,31 +25,35 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
 <body>
 
-    <form action="<c:url value='/j_security_check'/>" method="post">
-        <div class="row-fluid login-wrapper">
-            <img class="logo" src="<c:url value='/img/logo-white.png'/>">
+<form action="#" method="post" id="formRecupera">
+    <div class="row-fluid login-wrapper">
+        <img class="logo" src="<c:url value='/img/logo-white.png'/>">
 
-            <div class="span4 box">
-                <div class="content-wrap">
-                    <h6>Log in</h6>
-                    <input class="span12" type="text" name="j_username" placeholder="E-mail">
-                    <input class="span12" type="password" name="j_password" placeholder="Senha">
-                    <a href="<c:url value="/login/recuperar"/>" class="forgot">Recuperar login/senha?</a>
-                    <input class="btn-glow primary login" type="submit" value="Log in"/>
+        <div class="span4 box">
+            <div class="content-wrap">
+                <h6>Recuperar Senha</h6>
+                <div id="errorMessage">
+
                 </div>
+                <input class="span12" type="text" name="email" placeholder="E-mail de cadastro">
+                <input class="btn-glow primary login" type="button" value="Enviar Senha Por E-Mail" id="btnSubmit"/>
             </div>
         </div>
-    </form>
+    </div>
+</form>
 
-	<!-- scripts -->
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="<c:url value='/js/bootstrap.min.js'/>"></script>
-    <script src="<c:url value='/js/theme.js'/>"></script>
-
+<!-- scripts -->
+<script src="<c:url value='/js/jquery-1.10.2.min.js'/>"></script>
+<script src="<c:url value='/js/bootstrap.min.js'/>"></script>
+<script src="<c:url value='/js/theme.js'/>"></script>
+<script src="<c:url value='/js/underscore-min.js'/>"></script>
+<script src="<c:url value='/js/backbone-min.js'/>"></script>
+<script src="<c:url value='/js/application.js'/>"></script>
+<script src="<c:url value='/js/login/recuperar/recuperar.js'/>"></script>
 </body>
 </html>

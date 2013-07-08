@@ -37,9 +37,12 @@
             <div class="span4 box">
                 <div class="content-wrap">
                     <h6>Log in</h6>
+
+                    <div class="alert alert-error">Login ou senha inválidos</div>
+
                     <input class="span12" type="text" name="j_username" placeholder="E-mail">
                     <input class="span12" type="password" name="j_password" placeholder="Senha">
-                    <a href="<c:url value="/login/recuperar"/>" class="forgot">Recuperar login/senha?</a>
+                    <a href="<c:url value="/login/recuperar"/>" class="forgot">Forgot password?</a>
                     <input class="btn-glow primary login" type="submit" value="Log in"/>
                 </div>
             </div>
@@ -51,5 +54,21 @@
     <script src="<c:url value='/js/bootstrap.min.js'/>"></script>
     <script src="<c:url value='/js/theme.js'/>"></script>
 
+    <!-- pre load bg imgs -->
+    <script type="text/javascript">
+        $(function () {
+            // bg switcher
+            var $btns = $(".bg-switch .bg");
+            $btns.click(function (e) {
+                e.preventDefault();
+                $btns.removeClass("active");
+                $(this).addClass("active");
+                var bg = $(this).data("img");
+
+                $("html").css("background-image", "url('img/bgs/" + bg + "')");
+            });
+
+        });
+    </script>
 </body>
 </html>
