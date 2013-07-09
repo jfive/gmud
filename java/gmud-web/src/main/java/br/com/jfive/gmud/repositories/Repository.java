@@ -45,4 +45,17 @@ public abstract class Repository<T, I extends Serializable> {
 
 		return resultList;
 	}
+
+    public void beginTransaction() {
+        this.entityManager.getTransaction().begin();
+    }
+
+    public void commit(){
+        this.entityManager.getTransaction().commit();
+    }
+
+    public void rollback(){
+        this.entityManager.getTransaction().rollback();
+    }
+
 }

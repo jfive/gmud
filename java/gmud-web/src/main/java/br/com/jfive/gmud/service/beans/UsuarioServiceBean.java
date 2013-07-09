@@ -6,6 +6,8 @@ import br.com.jfive.gmud.models.querys.UsuarioQuery;
 import br.com.jfive.gmud.repositories.usuario.UsuarioRepository;
 import br.com.jfive.gmud.service.UsuarioService;
 
+import javax.transaction.Transaction;
+
 @Component
 public class UsuarioServiceBean implements UsuarioService {
 
@@ -16,9 +18,20 @@ public class UsuarioServiceBean implements UsuarioService {
         this.repository = repository;
     }
 
+
+
     @Override
     public UsuarioEntity buscaUsuarioPorLogin(String email) {
-        return repository.buscarUsuarioPorLogin(new UsuarioQuery(email));
+        UsuarioEntity usuarioEntity = repository.buscarUsuarioPorLogin(new UsuarioQuery(email));
+
+        if(usuarioEntity != null){
+            usuarioEntity.setSenha("gmud123");
+            repository.beginTransaction();
+            repository.update(usuarioEntity);
+            repository.commit();
+        }
+
+        return usuarioEntity;
     }
 
 
