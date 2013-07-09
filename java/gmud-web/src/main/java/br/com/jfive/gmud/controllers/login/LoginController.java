@@ -36,7 +36,7 @@ public class LoginController {
     @Consumes("application/json")
     public void enviarEmailRecuperacao(UsuarioDTO usuario) {
 
-        UsuarioEntity usuarioRecupera = usuarioService.buscaUsuarioPorLogin(usuario.getEmail());
+        UsuarioEntity usuarioRecupera = usuarioService.resetarSenhaUsuario(usuario.getEmail());
 
         if(usuarioRecupera == null) {
             ResultString message = message = new ResultString("E-mail não encontrado", true);

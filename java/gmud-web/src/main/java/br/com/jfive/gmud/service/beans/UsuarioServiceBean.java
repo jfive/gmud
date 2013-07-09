@@ -21,8 +21,8 @@ public class UsuarioServiceBean implements UsuarioService {
 
 
     @Override
-    public UsuarioEntity buscaUsuarioPorLogin(String email) {
-        UsuarioEntity usuarioEntity = repository.buscarUsuarioPorLogin(new UsuarioQuery(email));
+    public UsuarioEntity resetarSenhaUsuario(String login) {
+        UsuarioEntity usuarioEntity = repository.buscarUsuarioPorLogin(new UsuarioQuery(login));
 
         if(usuarioEntity != null){
             usuarioEntity.setSenha("gmud123");

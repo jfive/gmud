@@ -10,5 +10,6 @@ import br.com.jfive.gmud.models.UsuarioEntity;
  * To change this template use File | Settings | File Templates.
  */
 public interface UsuarioService {
-    UsuarioEntity buscaUsuarioPorLogin(String email);
+
+    UsuarioEntity resetarSenhaUsuario(String login);
 }
