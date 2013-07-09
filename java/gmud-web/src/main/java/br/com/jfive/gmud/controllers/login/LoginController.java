@@ -39,10 +39,11 @@ public class LoginController {
         UsuarioEntity usuarioRecupera = usuarioService.resetarSenhaUsuario(usuario.getEmail());
 
         if(usuarioRecupera == null) {
-            ResultString message = message = new ResultString("E-mail não encontrado", true);
-
+            ResultString message = new ResultString("E-mail não encontrado", true);
             result.use(Results.json()).withoutRoot().from(message).recursive().serialize();
         }else{
+
+            ResultString message = new ResultString("Nova senha enviada para seu e-mail verifique e tente novamente o login", false);
 
             Email emailSend = new SimpleEmail();
             emailSend.setSubject("[GMUD] - Nova Senha");
@@ -52,11 +53,8 @@ public class LoginController {
 
                 mailer.send(emailSend);
             } catch (EmailException e) {
-                e.printStackTrace();
+                message = new ResultString("Erro no envio do e-mail", true);
             }
-
-
-            ResultString message = message = new ResultString("Nova senha enviada para seu e-mail verifique e tente novamente o login", false);
 
             result.use(Results.json()).withoutRoot().from(message).recursive().serialize();
         }
