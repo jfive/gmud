@@ -10,12 +10,18 @@ package br.com.jfive.gmud.controllers.login;
 public class ResultString {
 
     private String message;
+    private boolean error;
 
-    public ResultString(String message) {
+    public ResultString(String message, boolean error) {
         this.message = message;
+        this.error = error;
     }
 
     public String getMessage() {
         return message;
+    }
+
+    public boolean isError() {
+        return error;
     }
 }

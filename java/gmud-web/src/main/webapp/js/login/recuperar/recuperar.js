@@ -5,16 +5,51 @@
  * Time: 20:13
  * To change this template use File | Settings | File Templates.
  */
+
+$().ready(function(){
+    $("#formRecupera").validate({
+        rules: {
+            email: {
+                required:true,
+                email: true
+            }
+        },
+        messages: {
+            email: {
+                required: "E-mail Obrigatório",
+                email: "E-mail Inválido"
+            }
+        },
+
+        errorElement: "div",
+        errorPlacement: function(error, element) {
+            error.addClass("alert alert-error");
+            error.appendTo($("#errorMessage"));
+        }
+    });
+});
+
 function userController($scope, $window, $http) {
 
-    $scope.sendEmail = function () {
+    $scope.sendEmail = function (usuario) {
 
-        var user = angular.toJson({usuario : $scope.usuario});
-        $http.post('/gmud/login/enviaSenha', user).success(function(data){
-            $('#errorMessage').html("");
-            $('#errorMessage').append("<div class='alert alert-success'>" + data.message +"</div>");
-        });
+        if($("#formRecupera").valid()) {
+            var user = angular.toJson({usuario : $scope.usuario});
+            $http.post('/gmud/login/enviaSenha', user).success(function(data){
 
+                $('#errorMessage').html("");
+
+                if(data.error){
+                    $('#errorMessage').append("<div class='alert alert-error'>"+ data.message +"</div>");
+                }else{
+                    $('#errorMessage').append("<div class='alert alert-success'>" + data.message +"</div>");
+                }
+
+            }).error(function(data, status, headers, config) {
+                $('#errorMessage').html("");
+                $('#errorMessage').append("<div class='alert alert-error'>Erro ao enviar senha favor tentar novamente mais tarde</div>");
+            });
+        }
 
     };
 

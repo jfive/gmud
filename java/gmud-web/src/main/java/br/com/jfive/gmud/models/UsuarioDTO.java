@@ -9,13 +9,14 @@ import java.io.Serializable;
  * Time: 03:04
  * To change this template use File | Settings | File Templates.
  */
-public class Usuario implements Serializable{
+public class UsuarioDTO implements Serializable{
+
 
 
     private static final long serialVersionUID = 5194639625652723773L;
     private String email;
 
-    public Usuario(String email) {
+    public UsuarioDTO(String email) {
         this.email = email;
     }
 

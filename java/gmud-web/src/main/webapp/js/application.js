@@ -1,5 +1,3 @@
-
-
 $(function(){
 
     var menu = $(menuActive);
@@ -11,5 +9,5 @@ $(function(){
 
     menu.addClass("active");
 
-})
+});
 

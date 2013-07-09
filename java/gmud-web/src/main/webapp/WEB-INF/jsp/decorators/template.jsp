@@ -41,7 +41,7 @@
 </head>
 <body>
 
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="<c:url value='/js/jquery-1.10.2.min.js'/>"></script>
     <script src="<c:url value='/js/bootstrap.min.js'/>"></script>
     <script src="<c:url value='/js/jquery-ui-1.10.2.custom.min.js'/>"></script>
     <script src="<c:url value='/js/jquery.uniform.min.js'/>"></script>

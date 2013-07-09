@@ -567,3 +567,8 @@ input.search{
 		height: 100%;
 	}
 }
+
+input.error {
+    background: white url('../img/error.png') no-repeat right;
+    border: 1px solid red !important;
+}

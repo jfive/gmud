@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="<c:url value='/css/layout.css'/>">
     <link rel="stylesheet" type="text/css" href="<c:url value='/css/elements.css'/>">
     <link rel="stylesheet" type="text/css" href="<c:url value='/css/icons.css'/>">
+    <link href="<c:url value='/css/lib/select2.css'/>" type="text/css" rel="stylesheet">
 
     <!-- libraries -->
     <link rel="stylesheet" type="text/css" href="<c:url value='/css/lib/font-awesome.css'/>">
@@ -28,32 +29,41 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
+
 <body ng-controller="userController">
 
-<form id="formRecupera">
-    <div class="row-fluid login-wrapper">
-        <img class="logo" src="<c:url value='/img/logo-white.png'/>">
 
-        <div class="span4 box">
-            <div class="content-wrap">
-                <h6>Recuperar Senha</h6>
-                <div id="errorMessage"></div>
-                <input class="span12" type="text" name="email" placeholder="E-mail de cadastro" ng-model="usuario.email">
-                <div class="row ctrls">
-                    <input class="btn-glow primary login" type="button" value="Enviar Senha Por E-Mail" id="btnSubmit"  ng-click="sendEmail()"/>
-                    <input class="btn-glow" type="button" value="Voltar"  ng-click="sendVoltar()"/>
+    <form id="formRecupera" name="form">
+        <div class="row-fluid login-wrapper">
+            <img class="logo" src="<c:url value='/img/logo-white.png'/>">
+
+            <div class="span4 box">
+                <div class="content-wrap">
+                    <h6>Recuperar Senha</h6>
+                    <div id="errorMessage"></div>
+
+                    <input class="span12" type="text"
+                       name="email"
+                       placeholder="E-mail de cadastro"
+                       ng-model="usuario.email"/>
+
+                    <div class="row ctrls">
+                        <input class="btn-glow primary login" type="button" value="gerar nova senha" id="btnSubmit"  ng-click="sendEmail(form)"/>
+                        <input class="btn-glow inverse" type="button" value="Voltar"  ng-click="sendVoltar()"/>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</form>
+    </form>
 
-<!-- scripts -->
-<script src="<c:url value='/js/jquery-1.10.2.min.js'/>"></script>
-<script src="<c:url value='/js/bootstrap.min.js'/>"></script>
-<script src="<c:url value='/js/theme.js'/>"></script>
-<script src="<c:url value='/js/angular.min.js'/>"></script>
-<script src="<c:url value='/js/application.js'/>"></script>
-<script src="<c:url value='/js/login/recuperar/recuperar.js'/>"></script>
+    <!-- scripts -->
+    <script src="<c:url value='/js/jquery-1.10.2.min.js'/>"></script>
+    <script src="<c:url value='/js/bootstrap.min.js'/>"></script>
+    <script src="<c:url value='/js/theme.js'/>"></script>
+    <script src="<c:url value='/js/angular.min.js'/>"></script>
+    <script src="<c:url value='/js/select2.min.js'/>"></script>
+    <script src="<c:url value='/js/jquery.validate.min.js'/>"></script>
+    <script src="<c:url value='/js/login/recuperar/recuperar.js'/>"></script>
+
 </body>
 </html>
