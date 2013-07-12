@@ -3,7 +3,6 @@ package br.com.jfive.gmud.controllers;
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.Validator;
-import br.com.caelum.vraptor.validator.Validations;
 import br.com.caelum.vraptor.view.Results;
 
 import java.util.ArrayList;
@@ -26,7 +25,7 @@ public class ClientesController {
     }
 
 
-    public void adiciona(final Cliente cliente){
+    public final void adiciona(final Cliente cliente){
 
 //        validator.checking(new Validations(){{
 //            if(that(cliente != null,"cliente","cliente.nulo")){
@@ -39,11 +38,11 @@ public class ClientesController {
         result.forwardTo(ClientesController.class).json();
     }
 
-    public List<Cliente> lista() {
+    public final List<Cliente> lista() {
         return clienteList;
     }
 
-    public void json(){
+    public final void json(){
         result.use(Results.json()).withoutRoot().from(clienteList).recursive().serialize();
     }
 

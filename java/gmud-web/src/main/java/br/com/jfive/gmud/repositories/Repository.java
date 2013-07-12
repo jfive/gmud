@@ -9,8 +9,8 @@ import javax.persistence.Query;
 
 public abstract class Repository<T, I extends Serializable> {
 	
-	protected final EntityManager entityManager;
-	protected final Class<T> clazz;
+	private final EntityManager entityManager;
+	private final Class<T> clazz;
 
 	protected Repository(EntityManager entityManager) {
 		this.entityManager = entityManager;
@@ -58,4 +58,7 @@ public abstract class Repository<T, I extends Serializable> {
         this.entityManager.getTransaction().rollback();
     }
 
+    public EntityManager getEntityManager() {
+        return entityManager;
+    }
 }

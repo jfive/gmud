@@ -13,6 +13,10 @@
         <pattern>/login/recuperar</pattern>
     </decorator>
 
+    <decorator name="trocarSenha">
+        <pattern>/login/trocarSenha</pattern>
+    </decorator>
+
     <decorator name="redirect">
         <pattern>/index.jsp</pattern>
     </decorator>

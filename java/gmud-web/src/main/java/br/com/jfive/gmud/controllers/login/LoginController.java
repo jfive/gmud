@@ -11,12 +11,14 @@ import org.apache.commons.mail.Email;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.SimpleEmail;
 
+
 @Resource
 public class LoginController {
 
     private final Result result;
     private Mailer mailer;
     private UsuarioService usuarioService;
+
 
     public LoginController(Result result,Mailer mailer, UsuarioService usuarioService) {
         this.result = result;
@@ -31,6 +33,8 @@ public class LoginController {
     }
 
     public void recuperar() {}
+
+    public void trocarSenha() {}
 
     @Post("/login/enviaSenha")
     @Consumes("application/json")

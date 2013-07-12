@@ -1,19 +1,16 @@
 package br.com.jfive.gmud.controllers.home;
 
-import br.com.jfive.gmud.annotations.Category;
 import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Resource;
-import br.com.caelum.vraptor.Result;
+import br.com.jfive.gmud.annotations.Category;
 
 
 @Resource
 @Category("home")
 public class HomeController {
 
-    private final Result result;
 
-    public HomeController(Result result) {
-        this.result = result;
+    public HomeController() {
     }
 
     @Path("/app/index")

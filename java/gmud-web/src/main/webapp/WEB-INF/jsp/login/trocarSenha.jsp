@@ -30,26 +30,35 @@
     <![endif]-->
 </head>
 
-<body ng-controller="userController">
+<body ng-controller="trocarSenhaController">
 
 
-    <form id="formRecupera" name="form">
+    <form id="formTrocarSenha" name="form">
         <div class="row-fluid login-wrapper">
             <img class="logo" src="<c:url value='/img/logo-white.png'/>">
 
             <div class="span4 box">
                 <div class="content-wrap">
-                    <h6>Recuperar Senha</h6>
+                    <h6>Trocar Senha</h6>
                     <div id="errorMessage"></div>
 
                     <input class="span12" type="text"
-                       name="email"
-                       placeholder="E-mail de cadastro"
-                       ng-model="usuario.email"/>
+                       name="senhaAtual"
+                       placeholder="Senha atual"
+                       ng-model="usuario.senha"/>
+
+                    <input class="span12" type="text"
+                           name="novaSenha"
+                           placeholder="Nova atual"
+                           ng-model="usuario.novaSenha"/>
+
+                    <input class="span12" type="text"
+                           name="confirmarSenha"
+                           placeholder="Confirmar senha"
+                           ng-model="usuario.confirmarSenha"/>
 
                     <div class="row ctrls">
-                        <input class="btn-glow primary login" type="button" value="gerar nova senha" id="btnSubmit"  ng-click="sendEmail(form)"/>
-                        <input class="btn-glow inverse" type="button" value="Voltar"  ng-click="sendVoltar()"/>
+                        <input class="btn-glow primary login" type="button" value="alterar senha" id="btnSubmit"  ng-click="trocarSenha(form)"/>
                     </div>
                 </div>
             </div>
@@ -64,7 +73,7 @@
     <script src="<c:url value='/js/select2.min.js'/>"></script>
     <script src="<c:url value='/js/jquery.validate.min.js'/>"></script>
     <script src="<c:url value='/js/global.js'/>"></script>
-    <script src="<c:url value='/js/login/recuperar/recuperar.js'/>"></script>
+    <script src="<c:url value='/js/login/trocarSenha/controller.js'/>"></script>
 
 </body>
 </html>

@@ -5,6 +5,7 @@ import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
 
+
 @Resource
 @Category("chart")
 public class ChartController {
@@ -12,12 +13,12 @@ public class ChartController {
 
     private final Result result;
 
-    public ChartController(Result result) {
-        this.result = result;
+    public ChartController(Result pResult) {
+        this.result = pResult;
     }
 
     @Path("/chart")
-    public void load(){
+    public final void load(){
         result.forwardTo("/WEB-INF/jsp/home/chart.jsp");
     }
 

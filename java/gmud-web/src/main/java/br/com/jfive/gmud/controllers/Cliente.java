@@ -12,19 +12,19 @@ public class Cliente {
     private String nome;
     private Endereco endereco = new Endereco();
 
-    public Endereco getEndereco() {
+    public final Endereco getEndereco() {
         return endereco;
     }
 
-    public void setEndereco(Endereco endereco) {
+    public final void setEndereco(final Endereco endereco) {
         this.endereco = endereco;
     }
 
-    public String getNome() {
+    public final String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
+    public final void setNome(final String nome) {
         this.nome = nome;
     }
 }

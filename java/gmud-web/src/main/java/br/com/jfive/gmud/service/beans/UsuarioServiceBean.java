@@ -6,8 +6,6 @@ import br.com.jfive.gmud.models.querys.UsuarioQuery;
 import br.com.jfive.gmud.repositories.usuario.UsuarioRepository;
 import br.com.jfive.gmud.service.UsuarioService;
 
-import javax.transaction.Transaction;
-
 @Component
 public class UsuarioServiceBean implements UsuarioService {
 
@@ -17,7 +15,6 @@ public class UsuarioServiceBean implements UsuarioService {
     public UsuarioServiceBean(UsuarioRepository repository) {
         this.repository = repository;
     }
-
 
 
     @Override

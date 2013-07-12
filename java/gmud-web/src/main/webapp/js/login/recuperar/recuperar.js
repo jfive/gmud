@@ -19,13 +19,13 @@ $().ready(function(){
                 required: "E-mail Obrigatório",
                 email: "E-mail Inválido"
             }
-        },
+        }/*,
 
         errorElement: "div",
         errorPlacement: function(error, element) {
             error.addClass("alert alert-error");
             error.appendTo($("#errorMessage"));
-        }
+        }*/
     });
 });
 

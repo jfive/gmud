@@ -21,7 +21,7 @@ public class UsuarioRepository extends Repository<UsuarioEntity,Long> {
 
         try {
 
-            TypedQuery<UsuarioEntity> queryJPA = this.entityManager.createQuery("select U from UsuarioEntity U where U.login = :login", UsuarioEntity.class);
+            TypedQuery<UsuarioEntity> queryJPA = this.getEntityManager().createQuery("select U from UsuarioEntity U where U.login = :login", UsuarioEntity.class);
 
             queryJPA.setParameter("login",query.getLogin());
 

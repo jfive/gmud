@@ -12,19 +12,19 @@ public class Endereco {
     private String rua = "Rua 1 ";
     private String estado = "São Paulo";
 
-    public String getRua() {
+    public final String getRua() {
         return rua;
     }
 
-    public void setRua(String rua) {
+    public final void setRua(String rua) {
         this.rua = rua;
     }
 
-    public String getEstado() {
+    public final String getEstado() {
         return estado;
     }
 
-    public void setEstado(String estado) {
+    public final void setEstado(String estado) {
         this.estado = estado;
     }
 }
